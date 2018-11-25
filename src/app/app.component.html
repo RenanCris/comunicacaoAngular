@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card">
+        <div class="card-header">
+          Componente Pai (Principal)
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Sou componente A</h5>
+          <p class="card-text">Esperando Atualização, meu valor inicial eh: <label class="h4">{{componentPai}}</label></p>
+
+          <app-primeiro-filho-a (atualizou)="onAtualizarValor($event)"></app-primeiro-filho-a>
+          <p></p>
+          <app-segundo-filho-a (atualizou)="onAtualizarValor($event)"></app-segundo-filho-a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
